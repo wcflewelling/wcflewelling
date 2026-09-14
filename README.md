@@ -32,7 +32,7 @@ Three channels at 1 kHz each over BLE, on a board I designed from schematic thro
 
 Native iOS and Android clients handle the BLE central role, live waveform rendering, Face ID auth, and HIPAA-aware PHI handling over TLS.
 
-*Source private — happy to walk through the firmware or the TKEO pipeline in an interview.*
+The firmware and Android client are public in [`emg-wearable-platform`](https://github.com/wcflewelling/emg-wearable-platform); the iOS client and the clinical framing stay private.
 
 ---
 
@@ -42,6 +42,8 @@ Native iOS and Android clients handle the BLE central role, live waveform render
 The same sensing platform pointed at rehab and training instead of the clinic: dual-channel surface EMG with real-time muscle-activation visualization, bilateral comparison, a TKEO activation classifier, and CSV export for anyone who wants the raw data. Runs in a demo mode with synthetic signal when no hardware is attached.
 
 Deliberately positioned as **research and educational use, not a medical device** — the regulatory path for a cleared device is a different project entirely, and pretending otherwise would be dishonest to users.
+
+Shares the sensing stack in [`emg-wearable-platform`](https://github.com/wcflewelling/emg-wearable-platform).
 
 ---
 
@@ -79,7 +81,7 @@ Friends-only meal photo feed with streaks. No algorithm, no ads, no public timel
 
 A local MCP server exposing the macOS Photos library to AI assistants — nine tools for search, album management, and export. Runs entirely on-device; no photos leave the machine.
 
-→ [`apple-photos-linkedin-headshots`](https://github.com/wcflewelling/apple-photos-linkedin-headshots)
+*Source private.*
 
 ---
 
