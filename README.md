@@ -32,7 +32,7 @@ Three channels at 1 kHz each over BLE, on a board I designed from schematic thro
 
 Native iOS and Android clients handle the BLE central role, live waveform rendering, Face ID auth, and HIPAA-aware PHI handling over TLS.
 
-→ [`myosense`](https://github.com/wcflewelling/myosense) · [`MyoSense-Android`](https://github.com/wcflewelling/MyoSense-Android)
+*Source private — happy to walk through the firmware or the TKEO pipeline in an interview.*
 
 ---
 
@@ -52,7 +52,7 @@ Issues cryptographically signed permission credentials to AI agents and verifies
 
 Also ships the part most token systems skip: **revocation**. A KV-backed revocation list lets an issued credential be killed immediately, with the verify endpoint failing closed on a bad token and the gateway refusing to create an order rather than failing open. Verify, gateway, and middleware suites all green.
 
-Live on the App Store for iOS and macOS. → [`passport-ai`](https://github.com/wcflewelling/passport-ai)
+**Live on the App Store** for iOS and macOS.
 
 ---
 
@@ -61,7 +61,7 @@ Live on the App Store for iOS and macOS. → [`passport-ai`](https://github.com/
 
 Reads your real calendar and turns the gaps into a training plan — when to lift, eat, hydrate, and wind down. **Privacy-first as a hard constraint:** no servers, no accounts, no analytics, no third-party SDKs. Everything stays on device, which is also why the App Store privacy label reads "Data Not Collected" honestly.
 
-Live on the App Store. → [`slotted`](https://github.com/wcflewelling/slotted)
+**Live on the App Store.**
 
 ---
 
@@ -70,7 +70,7 @@ Live on the App Store. → [`slotted`](https://github.com/wcflewelling/slotted)
 
 Friends-only meal photo feed with streaks. No algorithm, no ads, no public timeline. Anonymous Firebase Auth means zero signup friction.
 
-Live on the App Store. → [`phone-eats-first`](https://github.com/wcflewelling/phone-eats-first)
+**Live on the App Store.**
 
 ---
 
@@ -79,7 +79,7 @@ Live on the App Store. → [`phone-eats-first`](https://github.com/wcflewelling/
 
 A local MCP server exposing the macOS Photos library to AI assistants — nine tools for search, album management, and export. Runs entirely on-device; no photos leave the machine.
 
-→ [`apple-photos`](https://github.com/wcflewelling/apple-photos)
+→ [`apple-photos-linkedin-headshots`](https://github.com/wcflewelling/apple-photos-linkedin-headshots)
 
 ---
 
