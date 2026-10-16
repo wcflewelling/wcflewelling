@@ -23,6 +23,15 @@ Right now I'm a senior at Wisconsin doing bioinstrumentation and medical devices
 
 ## Featured work
 
+### 🫀 OpenSteth — low-cost remote stethoscope *(senior capstone, in progress)*
+`ESP32-S3` · `ESP-IDF` · `Embedded C` · `BLE` · `Swift/SwiftUI` · `Python / DSP`
+
+Telehealth gives clinicians video and voice but no heart or lung sounds, and electronic stethoscopes cost $150–500 and are built to be reused, which rules them out wherever infection control wants something disposable. OpenSteth is a capstone project for a UW Pediatrics client: an inexpensive auscultation device whose patient-contacting part can be thrown away.
+
+Two MEMS microphones on an ESP32-S3: one on the chest and one listening to the room, so ambient noise can be subtracted before the heart sounds go out over BLE to a SwiftUI app. A bench firmware build streams both raw channels over USB so the noise-cancellation pipeline can be tuned in Python against real recordings.
+
+---
+
 ### 🩺 Pavlik Harness Kick Sensor — wearable EMG for infant femoral nerve palsy
 `Nordic nRF54L15` · `Zephyr RTOS` · `Embedded C` · `custom PCB` · `Swift` · `Kotlin` · `Firebase`
 
