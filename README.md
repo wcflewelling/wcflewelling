@@ -61,14 +61,14 @@ Shares the sensing stack in [`emg-wearable-platform`](https://github.com/wcflewe
 
 Issues cryptographically signed permission credentials to AI agents and verifies them **statelessly** — a verifier checks a token without calling back to the issuer. Private keys never leave the iOS Secure Enclave; issuance is gated behind Face ID.
 
-Also ships the part most token systems skip: **revocation**. A KV-backed revocation list lets an issued credential be killed immediately, with the verify endpoint failing closed on a bad token and the gateway refusing to create an order rather than failing open. Verify, gateway, and middleware suites all green.
+Also ships the part most token systems skip: **revocation**. The owner revokes a credential with a request signed by that passport's own Secure Enclave key, so nobody else can kill it; a KV-backed revocation list makes it fail verification immediately, and the verify endpoint fails closed if it can't confirm a token's revocation status.
 
 **Live on the App Store** for iOS and macOS.
 
 ---
 
 ### 📅 Slotted — calendar-aware training scheduler
-`Swift/SwiftUI` · `EventKit` · `StoreKit 2` · `HealthKit`
+`Swift/SwiftUI` · `EventKit` · `StoreKit 2`
 
 Reads your real calendar and turns the gaps into a training plan — when to lift, eat, hydrate, and wind down. **Privacy-first as a hard constraint:** no servers, no accounts, no analytics, no third-party SDKs. Everything stays on device, which is also why the App Store privacy label reads "Data Not Collected" honestly.
 
@@ -86,7 +86,7 @@ Friends-only meal photo feed with streaks. No algorithm, no ads, no public timel
 ---
 
 ### 🖼️ Apple Photos MCP
-`Python` · `Model Context Protocol`
+`Node.js` · `AppleScript` · `Model Context Protocol`
 
 A local MCP server exposing the macOS Photos library to AI assistants — nine tools for search, album management, and export. Runs entirely on-device; no photos leave the machine.
 
